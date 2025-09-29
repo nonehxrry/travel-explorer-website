@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer Website</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <header>
+        <h1>Travel Explorer 🌎</h1>
+        <p>Your simplified trip planning guide.</p>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter a city or destination...">
+            <button id="search-btn">Explore</button>
+        </div>
+
+        <div id="loading-message" class="hidden">
+            Loading data...
+        </div>
+
+        <div id="error-message" class="hidden">
+            Could not find data for that destination. Please try again.
+        </div>
+
+        <section id="destination-info" class="hidden">
+            <h2 id="destination-name"></h2>
+
+            <div id="weather-section" class="info-card">
+                <h3>Current Weather</h3>
+                <p id="weather-temp"></p>
+                <p id="weather-desc"></p>
+            </div>
+
+            <div id="image-gallery" class="info-card">
+                <h3>Photos from Unsplash</h3>
+                <div id="photo-grid">
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Travel Explorer. Data powered by OpenWeatherMap and Unsplash.</p>
+    </footer>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
